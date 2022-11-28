@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar bg-light">
+    <nav class="navbar bg-light text-center">
       <div class="container">
         <a
           class="navbar-brand"
