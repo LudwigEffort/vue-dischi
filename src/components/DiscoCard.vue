@@ -1,7 +1,7 @@
 <template>
   <div class="col">
     <div
-      class="card"
+      class="card card-style"
     >
       <img
         :src="imgUrl"
@@ -36,5 +36,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    .card-style {
+        background-color: #2E3A46;
+        color: white;
+    }
 </style>
