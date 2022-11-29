@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <HeaderPage />
+    <HeaderPage @change="onFiltersChange" />
     <MainPage />
   </div>
 </template>
@@ -10,9 +10,20 @@ import HeaderPage from './components/HeaderPage.vue';
 import MainPage from './components/MainPage.vue';
 
 export default {
+  nam: 'App',
   components: {
     HeaderPage,
     MainPage,
+  },
+  data() {
+    return {
+      selectedValue: 'none',
+    };
+  },
+  methods: {
+    onFiltersChange(newSelectedValue) {
+      this.selectedValue = newSelectedValue;
+    },
   },
 };
 </script>
