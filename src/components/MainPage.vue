@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <main class="container text-center p-4">
     <div
       v-if="arrDisco"
-      class="row row-cols-4"
+      class="row row-cols-4 g-5"
     >
       <DiscoCard
         v-for="disco in arrDisco"
@@ -16,7 +16,7 @@
     <div v-else>
       Loading...
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -44,6 +44,8 @@ export default {
 };
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+    main {
+        background-color: #1E2D3B;
+    }
 </style>

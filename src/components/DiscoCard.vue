@@ -2,7 +2,6 @@
   <div class="col">
     <div
       class="card"
-      style="width: 18rem;"
     >
       <img
         :src="imgUrl"
@@ -10,15 +9,15 @@
         :alt="title"
       >
       <div class="card-body">
-        <h2 class="title">
+        <h4 class="title">
           {{ title }}
-        </h2>
-        <h4 class="artist">
+        </h4>
+        <p class="artist">
           {{ artist }}
-        </h4>
-        <h4 class="year">
+        </p>
+        <p class="year">
           {{ year }}
-        </h4>
+        </p>
       </div>
     </div>
   </div>
