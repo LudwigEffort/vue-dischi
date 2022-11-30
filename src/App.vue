@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <HeaderPage @change="onFiltersChange" />
+    <HeaderPage />
     <MainPage />
   </div>
 </template>
@@ -14,16 +14,6 @@ export default {
   components: {
     HeaderPage,
     MainPage,
-  },
-  data() {
-    return {
-      selectedValue: 'none',
-    };
-  },
-  methods: {
-    onFiltersChange(newSelectedValue) {
-      this.selectedValue = newSelectedValue;
-    },
   },
 };
 </script>

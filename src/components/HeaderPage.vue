@@ -17,25 +17,11 @@
         </div>
         <div class="col-3 offset-5">
           <select
-            v-model="value"
             class="form-select"
             aria-label="Default select example"
-            @change="$emit('change', value)"
           >
             <option value="none">
               Chose genre
-            </option>
-            <option value="Jazz">
-              Jazz
-            </option>
-            <option value="Metal">
-              Metal
-            </option>
-            <option value="Pop">
-              Pop
-            </option>
-            <option value="Rock">
-              Rock
             </option>
           </select>
         </div>
@@ -47,18 +33,6 @@
             <option value="none">
               Chose author
             </option>
-            <option value="Jazz">
-              Jazz
-            </option>
-            <option value="Metal">
-              Metal
-            </option>
-            <option value="Pop">
-              Pop
-            </option>
-            <option value="Rock">
-              Rock
-            </option>
           </select>
         </div>
       </div>
@@ -69,11 +43,6 @@
 <script>
 export default {
   name: 'HeaderPage',
-  data() {
-    return {
-      value: 'none',
-    };
-  },
 };
 </script>
 
